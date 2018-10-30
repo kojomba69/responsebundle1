@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextViewExplicitIntent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explicit Intent"
+                android:textAlignment="center"
+                android:textColor="Pink"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SingName:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextSingle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewbundle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bundleName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextbundle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/buttonresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result Value"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
